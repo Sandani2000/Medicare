@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MediCare</string>
+    <!--Add and Edit a drug-->
+    <string name="drug_name">Drug Name :</string>
+    <string name="manufacture_name">Manufacture Name :</string>
+    <string name="manufacture_date">Manufacture Date :</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="category">Category</string>
+    <string name="price_per_unit">Price per unit</string>
+    <string name="quantity">Quantity</string>
+    <string name="name_of_the_drug">Name of the Drug :</string>
+    <string name="drug_description">Drug Description :</string>
+    <string name="manufactured_by">Manufactured By :</string>
+    <!--Other Strings-->
+    <string name="add_a_new_drug">Add a new Drug</string>
+    <string name="ManufacturerName">Hemas Pharmaceuticals (Pvt) Ltd</string>
+    <string name="healthCareProviderName">Union Chemists</string>
+    <!--Button Names-->
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_add">Add</string>
+    <string name="btnUpdate">Update</string>
+</resources>

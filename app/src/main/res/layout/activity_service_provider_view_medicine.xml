@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceProviderViewMedicine"
+    android:background="@drawable/main7">
+
+    <TextView
+        android:id="@+id/idPrice2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/fredoka_one"
+        android:text="100ml - Rs 850/="
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Expiry Date - 2024.12.05"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/idCorexDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:text="Corex-D is an alcohol-free cough syrup formulated for the relief of irritating and troublesome cough. It has antitussive and antihistaminic actions. It contains Dextromethorphan as the cough suppressant and Chlorpheniramine maleate as the antihistamine. Pack Size 60ml and 100ml Bottle."
+        android:textColor="#415B60"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/id_Corex_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_Corex_name" />
+
+    <TextView
+        android:id="@+id/id_Corex_name"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Corex-D - Cough Syrups"
+        android:textAllCaps="false"
+        android:textColor="#0571A3"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/idCorexImg"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="@+id/idCorexImg"
+        app:layout_constraintTop_toBottomOf="@+id/idCorexImg" />
+
+    <ImageView
+        android:id="@+id/idCorexImg"
+        android:layout_width="188dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/corex_d" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="71dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/healthCareProviderName"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Manufactured date - 2022.12.05"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/idManfactureBy"
+        app:layout_constraintTop_toBottomOf="@+id/idManfactureBy" />
+
+    <TextView
+        android:id="@+id/idManfactureBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Manufacture By - Hemas Pharmaceuticals (Pvt) Ltd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/idCorexDescription"
+        app:layout_constraintTop_toBottomOf="@+id/idCorexDescription" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="@dimen/ViewDrugEditBtnWidth"
+        android:layout_height="@dimen/ViewDrugEditBtnHeight"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/accent_color"
+        android:drawableLeft="@drawable/baseline_edit_24"
+        android:gravity="center"
+        android:text="@string/btn_edit"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPrice2" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/DeleteBtnWidth"
+        android:layout_height="@dimen/DeleteBtnHeight"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#970505"
+        android:drawableLeft="@drawable/baseline_delete_forever_24"
+        android:gravity="center"
+        android:text="@string/btn_delete"
+        android:textColor="#F4F0F0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toTopOf="@+id/btnEdit"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main7">
+
+
+    <TextView
+        android:id="@+id/id_drug_name"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="vitamin_d_plus_capsule"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idPharmacyName"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="by_union_chemists"
+        android:textAllCaps="false"
+        android:textColor="#6A6565"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/id_drug_name"
+        app:layout_constraintStart_toStartOf="@+id/id_drug_name"
+        app:layout_constraintTop_toBottomOf="@+id/id_drug_name" />
+
+    <TextView
+        android:id="@+id/idPharmacyName2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pt_sans_caption"
+        android:text="drugDescrption"
+        android:textAllCaps="false"
+        android:textColor="#6A6565"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idPharmacyName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idPrice"
+        app:layout_constraintTop_toBottomOf="@+id/idPrice"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:id="@+id/txtQnt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|center_horizontal"
+        android:paddingTop="10px"
+        android:text="_1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="sub"
+        app:layout_constraintEnd_toStartOf="@+id/txtQnt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/idPrice"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName" />
+
+    <TextView
+        android:id="@+id/idPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/fredoka_one"
+        android:text="rs_450"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_primary_color"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/idPharmacyName"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="@+id/idPharmacyName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtQnt"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_background"
+        android:text="Add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idPharmacyName2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAddToWishList"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName2"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <Button
+        android:id="@+id/btnAddToWishList"
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/baseline_favorite_border_24"
+        android:drawableTint="#050404"
+        android:drawingCacheQuality="high"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idPharmacyName2"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRating"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageView
+        android:id="@+id/idRating"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rating2"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPharmacyName2"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_drug_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        app:srcCompat="@drawable/vitamin_d_plus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
