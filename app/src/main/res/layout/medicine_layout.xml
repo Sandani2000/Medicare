@@ -20,7 +20,7 @@
             android:layout_height="69dp"
 
             android:adjustViewBounds="true"
-            android:padding="8dp"
+            android:padding="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/img"
             app:layout_constraintBottom_toBottomOf="parent"
