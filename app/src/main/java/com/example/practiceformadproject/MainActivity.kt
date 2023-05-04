@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var navController: NavController
+
     private lateinit var edDrugName: EditText
     private lateinit var edManufactureName: EditText
     private lateinit var edExpiryDate: EditText
