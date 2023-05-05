@@ -12,6 +12,12 @@
         android:theme="@style/Theme.PracticeForMadProject"
         tools:targetApi="31">
         <activity
+            android:name=".ContinueAddToCart"
+            android:exported="false" />
+        <activity
+            android:name=".AddToCart"
+            android:exported="false" />
+        <activity
             android:name=".ServiceProviderRecyclerView"
             android:exported="false" />
         <activity
@@ -35,11 +41,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".CartMainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
