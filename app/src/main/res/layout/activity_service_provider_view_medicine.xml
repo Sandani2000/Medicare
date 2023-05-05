@@ -14,7 +14,7 @@
         android:layout_marginTop="15dp"
         android:layout_weight="1"
         android:fontFamily="@font/fredoka_one"
-        android:text="100ml - Rs 850/="
+        android:text="@string/_100ml_rs_850"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
