@@ -12,7 +12,7 @@ class ServiceProviderViewMedicine : AppCompatActivity() {
 
         val secondAct = findViewById<Button>(R.id.btnDelete)
         secondAct.setOnClickListener {
-            val intent = Intent(this, viewAllMedicines::class.java)
+            val intent = Intent(this, ViewAllMedicines::class.java)
             startActivity(intent)
         }
 
