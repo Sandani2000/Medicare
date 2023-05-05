@@ -27,7 +27,7 @@ class RecyclerAdapter(private val medicineList: ArrayList<MedicineModel>) :
 
         holder.medName.text = currentMedicine.name
         holder.medprice.text = currentMedicine.pricePerUnit
-        holder.image.setImageResource(pictures[position])
+            holder.image.setImageResource(pictures[position])
     }
 
     inner class ViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView) {
