@@ -51,8 +51,7 @@ class ViewAllMedicines : AppCompatActivity() {
                     mAdapter.setOnItemClickListener(object : RecyclerAdapter.OnItemClickListener{
                         override fun onItemClick(position: Int) {
 
-                            // methana ServiceProviderViewMedicine = oyge kotlin file eke nama
-                            val intent = Intent(this@ViewAllMedicines, ServiceProviderViewMedicine::class.java)
+                            val intent = Intent(this@ViewAllMedicines, AddToCart::class.java)
 
                             //put extras
                             intent.putExtra("medicineId", medicineList[position].medId )
