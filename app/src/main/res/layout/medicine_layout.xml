@@ -22,7 +22,7 @@
             android:adjustViewBounds="true"
             android:padding="8dp"
             android:scaleType="fitXY"
-            android:src="@drawable/img"
+            android:src="@drawable/paracetamol"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.047"
