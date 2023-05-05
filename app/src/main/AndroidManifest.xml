@@ -18,7 +18,7 @@
             android:name=".EditMedicine"
             android:exported="false" />
         <activity
-            android:name=".viewAllMedicines"
+            android:name=".ViewAllMedicines"
             android:exported="false" />
         <activity
             android:name=".ServiceProviderViewMedicine"
@@ -34,6 +34,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CartMainActivity"
+            android:exported="false">
         </activity>
 
         <meta-data
