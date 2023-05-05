@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val secondAct = findViewById<Button>(R.id.btnViewMedicines)
         secondAct.setOnClickListener{
-            val intent = Intent(this,viewAllMedicines::class.java)
+            val intent = Intent(this,ViewAllMedicines::class.java)
             startActivity(intent)
         }
 

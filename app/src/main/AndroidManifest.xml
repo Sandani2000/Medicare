@@ -18,7 +18,7 @@
             android:name=".EditMedicine"
             android:exported="false" />
         <activity
-            android:name=".viewAllMedicines"
+            android:name=".ViewAllMedicines"
             android:exported="false" />
         <activity
             android:name=".ServiceProviderViewMedicine"
