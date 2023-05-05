@@ -18,6 +18,9 @@ class CartMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cartactivity_main)
 
+
+
+
         val imageList = arrayOf(R.drawable.img)
         val image1 = arrayOf(R.drawable.baseline_edit_24)
         val image2 = arrayOf(R.drawable.baseline_delete_forever_24)
