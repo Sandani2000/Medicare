@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/main3"
+    tools:context=".activities.DeliveryDetails">
+
+    <EditText
+        android:id="@+id/inputname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Receiver's Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#151212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_phone"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#191414"
+        app:layout_constraintEnd_toEndOf="@+id/inputname"
+        app:layout_constraintStart_toStartOf="@+id/inputname"
+        app:layout_constraintTop_toBottomOf="@+id/inputname" />
+
+    <EditText
+        android:id="@+id/houseno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_home"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="House No and Street Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#191313"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_location_on"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#171111"
+        app:layout_constraintEnd_toEndOf="@+id/houseno"
+        app:layout_constraintStart_toStartOf="@+id/houseno"
+        app:layout_constraintTop_toBottomOf="@+id/houseno"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="#130E0E"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="564dp"
+        android:text="Continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/baseline_back" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Details"
+        android:textColor="#170C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/baseline_radio_button"
+        android:drawablePadding="10dp"
+        android:text="Cash On Delivery"
+        android:textColor="#150D0D"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/baseline_radio_button_unchecked_24"
+        android:drawablePadding="10dp"
+        android:text="Cash Payment"
+        android:textColor="#150D0D"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/bottom_nav_background"
+        android:text="@string/i_have_read_and_agreed_to_the_terms_and_conditions"
+        android:textColorHighlight="#1B1313"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
