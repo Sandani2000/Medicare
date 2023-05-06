@@ -156,7 +156,7 @@
         android:layout_height="37dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/inputs_background"
-        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:drawableRight="@drawable/amoxcillin"
         android:drawablePadding="15dp"
         android:ems="10"
         android:inputType="date"

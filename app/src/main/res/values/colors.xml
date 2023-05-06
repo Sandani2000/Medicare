@@ -20,4 +20,6 @@
     <color name="secondary_text">#757575</color>
     <color name="divider_color">#BDBDBD</color>
     <color name="DarkBlue">#0D23B1</color>
+    <color name="medBlue">#00C8E9</color>
+
 </resources>
