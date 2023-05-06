@@ -33,9 +33,6 @@
             android:name=".ServiceProviderViewMedicine"
             android:exported="false" />
         <activity
-            android:name=".ViewMedicines"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
