@@ -1,19 +1,19 @@
 package com.example.wishlist
 
 import android.content.Intent
+import android.icu.text.DateFormat
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.wishlist.databinding.ActivityUploadBinding
-
-
+import com.example.practiceformadproject.R
+import com.example.practiceformadproject.databinding.ActivityUploadBinding
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
-import java.text.DateFormat
 import java.util.*
+
 
 class UploadActivity : AppCompatActivity() {
 
