@@ -15,7 +15,9 @@ class ServiceProviderRecyclerView : AppCompatActivity() {
     private lateinit var medicineList: ArrayList <MedicineModel>
     private lateinit var firebase: DatabaseReference
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_service_provider_recycler_view)
 
