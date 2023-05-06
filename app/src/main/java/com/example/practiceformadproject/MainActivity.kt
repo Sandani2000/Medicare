@@ -35,17 +35,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        val fifthAct = findViewById<Button>(R.id.btnDelivery)
-//        fifthAct.setOnClickListener{
-//            val intent = Intent(this,FirstPage::class.java)
-//            startActivity(intent)
-//        }
+        val fifthAct = findViewById<Button>(R.id.btnDelivery)
+        fifthAct.setOnClickListener{
+            val intent = Intent(this,FirstPage::class.java)
+            startActivity(intent)
+        }
 
-        val sixthAct = findViewById<Button>(R.id.btnPharmacyView)
+        val sixthAct = findViewById<Button>(R.id.btnMyMedicines)
         sixthAct.setOnClickListener{
             val intent = Intent(this,MainActivity_wish::class.java)
             startActivity(intent)
         }
+
+
     }
 
 
