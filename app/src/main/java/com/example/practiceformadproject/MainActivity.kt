@@ -35,17 +35,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        val fifthAct = findViewById<Button>(R.id.btnDelivery)
-//        fifthAct.setOnClickListener{
-//            val intent = Intent(this,FirstPage::class.java)
-//            startActivity(intent)
-//        }
 
-        val sixthAct = findViewById<Button>(R.id.btnPharmacyView)
-        sixthAct.setOnClickListener{
-            val intent = Intent(this,MainActivity_wish::class.java)
-            startActivity(intent)
-        }
     }
 
 
