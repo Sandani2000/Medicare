@@ -25,10 +25,10 @@ class FirstPage : AppCompatActivity() {
         btnInsertDelivery = findViewById(R.id.btnInsertDelivery)
         btnOrderSummary = findViewById(R.id.btnOrderSummary)
 
-        /*btnInsertData.setOnClickListener {
+        btnInsertData.setOnClickListener {
             val intent = Intent(this, PaymentDetails::class.java)
             startActivity(intent)
-        }*/
+        }
 
         /*btnFetchData.setOnClickListener {
             val intent = Intent(this, PaymentFetching::class.java)
