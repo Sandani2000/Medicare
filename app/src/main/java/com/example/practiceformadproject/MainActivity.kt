@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val firstAct = findViewById<Button>(R.id.btnAddMedicines)
         firstAct.setOnClickListener{
-            val intent = Intent(this,EditMedicine::class.java)
+            val intent = Intent(this,AddMedicine::class.java)
             startActivity(intent)
         }
 
@@ -28,6 +28,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,CartMainActivity::class.java)
             startActivity(intent)
         }
+
+        val forthAct = findViewById<Button>(R.id.btnPharmacyView)
+        forthAct.setOnClickListener{
+            val intent = Intent(this,ServiceProviderRecyclerView::class.java)
+            startActivity(intent)
+        }
+
+//        val fifthAct = findViewById<Button>(R.id.btnDelivery)
+//        fifthAct.setOnClickListener{
+//            val intent = Intent(this,FirstPage::class.java)
+//            startActivity(intent)
+//        }
     }
 
 

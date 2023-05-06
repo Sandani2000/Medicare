@@ -24,6 +24,7 @@ class ViewAllMedicines : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
 
+        recyclerView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY;
         medicineList = arrayListOf<MedicineModel>()
 
         getMedicines()
