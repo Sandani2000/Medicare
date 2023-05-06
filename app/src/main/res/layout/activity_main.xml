@@ -4,32 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back15"
+    android:background="@drawable/back19"
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Medicare"
-        android:textColor="@color/DarkBlue"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
 
     <Button
         android:id="@+id/btnViewMedicines"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/black"
         android:padding="10dp"
@@ -37,7 +22,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/btnAddMedicines"
@@ -63,22 +48,52 @@
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/black"
         android:padding="10dp"
-        android:textColor="#FFFFFF"
         android:text="View Cart"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddMedicines" />
+
+    <Button
+        android:id="@+id/btnPharmacyView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Pharmacy Provider View Medicines"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewCart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnViewCart"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewCart" />
+
+    <Button
+        android:id="@+id/btnDelivery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Delivery and Payment"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnPharmacyView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPharmacyView"
+        app:layout_constraintTop_toBottomOf="@+id/btnPharmacyView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="213dp"
         android:layout_height="193dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toTopOf="@+id/btnViewMedicines"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logo_copy" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

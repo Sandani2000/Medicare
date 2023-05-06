@@ -20,7 +20,7 @@ class UserRecyclerAdapter(private val medicineList: ArrayList<MedicineModel>) :
         myListener = clickListener
     }
 
-    private val pictures: IntArray = intArrayOf(R.drawable.panadol, R.drawable.digene, R.drawable.losartan50mg, R.drawable.aspirin)
+    private val pictures:IntArray = intArrayOf(R.drawable.salbutamol,R.drawable.panadol,R.drawable.digene,R.drawable.losartan50mg,R.drawable.aspirin,R.drawable.metformin,R.drawable.amoxcillin,R.drawable.corex_d,R.drawable.croxil,R.drawable.gabapentin,R.drawable.penicilin)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
@@ -36,7 +36,7 @@ class UserRecyclerAdapter(private val medicineList: ArrayList<MedicineModel>) :
         val currentMedicine = medicineList[position]
 
         holder.medName.text = currentMedicine.name
-        holder.medPrice.text = currentMedicine.pricePerUnit
+        holder.medPrice.text = "Rs.${currentMedicine.pricePerUnit}/="
         holder.image.setImageResource(pictures[position])
     }
 

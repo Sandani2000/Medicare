@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back17"
+    android:background="@drawable/blue_background_main1"
     android:padding="10dp">
 
 
@@ -16,6 +16,7 @@
         tools:layout_editor_absoluteX="10dp">
 
         <SearchView
+            app:theme="@style/MySearchViewStyle"
             android:layout_width="@dimen/SearchBarWidth"
             android:layout_height="@dimen/SearchBarHeight"
             android:layout_marginTop="20dp"
@@ -42,7 +43,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.014" />
+        app:layout_constraintVertical_bias="0.014"
+        android:scrollbars="vertical"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
