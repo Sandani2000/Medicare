@@ -40,6 +40,12 @@ class MainActivity : AppCompatActivity() {
 //            val intent = Intent(this,FirstPage::class.java)
 //            startActivity(intent)
 //        }
+
+        val sixthAct = findViewById<Button>(R.id.btnPharmacyView)
+        sixthAct.setOnClickListener{
+            val intent = Intent(this,MainActivity_wish::class.java)
+            startActivity(intent)
+        }
     }
 
 
