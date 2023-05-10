@@ -35,6 +35,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val fifthAct = findViewById<Button>(R.id.btntoLogin)
+        fifthAct.setOnClickListener{
+            val intent = Intent(this,ServiceProviderRecyclerView::class.java)
+            startActivity(intent)
+        }
+
+        val sixthAct = findViewById<Button>(R.id.toComplaints)
+        sixthAct.setOnClickListener{
+            val intent = Intent(this,DisplayComp::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

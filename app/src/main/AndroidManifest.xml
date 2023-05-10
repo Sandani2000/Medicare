@@ -30,6 +30,19 @@
             android:name=".ViewAllMedicines"
             android:exported="false" />
         <activity
+            android:name=".SugHome"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SubjectDetails"
+            android:exported="true" />
+        <activity
+            android:name=".DisplayComp"
+            android:exported="true" />
+        <activity
             android:name=".ServiceProviderViewMedicine"
             android:exported="false" />
         <activity
