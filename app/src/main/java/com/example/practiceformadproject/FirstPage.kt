@@ -30,7 +30,7 @@ class FirstPage : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*btnFetchData.setOnClickListener {
+        btnFetchData.setOnClickListener {
             val intent = Intent(this, PaymentFetching::class.java)
             startActivity(intent)
         }
@@ -40,7 +40,7 @@ class FirstPage : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnOrderSummary.setOnClickListener {
+        /*btnOrderSummary.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }*/

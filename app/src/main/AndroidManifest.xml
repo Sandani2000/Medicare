@@ -33,6 +33,23 @@
             android:name=".ServiceProviderViewMedicine"
             android:exported="false" />
         <activity
+            android:name=".DeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPaymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentFetching"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentDetails"
+            android:exported="false" />
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
