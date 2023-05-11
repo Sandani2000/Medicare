@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
 
 
+    android:background="@drawable/back12"
     tools:context=".FirstPage">
 
     <TextView
@@ -35,10 +36,10 @@
 
     <Button
         android:id="@+id/btnFetchData"
-        android:layout_width="229dp"
-        android:layout_height="48dp"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
         android:layout_marginTop="75dp"
-        android:text="View Payment Details"
+        android:text="view Payment Details"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInsertData" />
@@ -48,21 +49,10 @@
         android:layout_width="236dp"
         android:layout_height="48dp"
         android:layout_marginTop="75dp"
-        android:text="View Delivery Details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFetchData" />
-
-    <Button
-        android:id="@+id/btnOrderSummary"
-        android:layout_width="231dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="75dp"
-        android:text="View Order Summary"
+        android:text="insert Delivery Details"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInsertDelivery" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFetchData" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
