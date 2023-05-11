@@ -1,25 +1,26 @@
 package com.example.practiceformadproject
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.app.DatePickerDialog
 import android.os.Bundle
 import android.widget.Button
+import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
-//import com.example.myapplication1.R
-//import com.example.myapplication1.models.PaymentModel
-//import com.example.myapplication1.models.ReceiverModel
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
+import java.util.*
 
 class PaymentDetails : AppCompatActivity() {
 
     private lateinit var etCardNumber: EditText
     private lateinit var etCardHolderName: EditText
     private lateinit var etMonthYear: EditText
-    private lateinit var btnSave:Button
+    private lateinit var btnSave: Button
 
-    private lateinit var dbRef : DatabaseReference
+    private lateinit var dbRef: DatabaseReference
+    private lateinit var calendar: Calendar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,56 +32,62 @@ class PaymentDetails : AppCompatActivity() {
         btnSave = findViewById(R.id.button6)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Payments")
+        calendar = Calendar.getInstance()
 
+        etMonthYear.setOnClickListener {
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
 
+            val datePicker = DatePickerDialog(
+                this,
+                DatePickerDialog.OnDateSetListener { _: DatePicker, year: Int, month: Int, day: Int ->
+                    val selectedDate = Calendar.getInstance()
+                    selectedDate.set(year, month, day)
 
-        //val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
+                    val dateFormat = SimpleDateFormat("MM/yyyy", Locale.getDefault())
+                    etMonthYear.setText(dateFormat.format(selectedDate.time))
+                },
+                year,
+                month,
+                day
+            )
+
+            datePicker.show()
+        }
 
         btnSave.setOnClickListener {
             savePaymentDetails()
         }
-
-
     }
-    private fun savePaymentDetails(){
-        //getting values
+
+    private fun savePaymentDetails() {
         val cardNo = etCardNumber.text.toString()
         val holderName = etCardHolderName.text.toString()
         val expDate = etMonthYear.text.toString()
 
-
-        if(cardNo.isEmpty()){
-            etCardNumber.error = "Please Card Number"
+        if (cardNo.isEmpty()) {
+            etCardNumber.error = "Please enter Card Number"
         }
-        if(holderName.isEmpty()){
-            etCardHolderName.error = "Please Enter Card Holder Name"
+        if (holderName.isEmpty()) {
+            etCardHolderName.error = "Please enter Card Holder Name"
         }
-        if(expDate.isEmpty()){
-            etMonthYear.error = "Please Enter Expire date"
+        if (expDate.isEmpty()) {
+            etMonthYear.error = "Please enter Expire date"
         }
 
         val payId = dbRef.push().key!!
-
-        val payment = PaymentModel(payId, cardNo , holderName, expDate)
+        val payment = PaymentModel(payId, cardNo, holderName, expDate)
 
         dbRef.child(payId).setValue(payment)
-            .addOnCompleteListener{
-                Toast.makeText(this,"Data inserted successfully", Toast.LENGTH_LONG).show()
+            .addOnCompleteListener {
+                Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
 
                 etCardNumber.text.clear()
                 etCardHolderName.text.clear()
                 etMonthYear.text.clear()
-
-
-            }.addOnFailureListener{ err ->
-                Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_LONG).show()
-
+            }.addOnFailureListener { err ->
+                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
             }
-
-        /*val secondAct = findViewById<Button>(R.id.button6)
-        secondAct.setOnClickListener{
-            val intent = Intent(this,PaymentFetching::class.java)
-            startActivity(intent)
-        }*/
     }
 }
