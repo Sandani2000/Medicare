@@ -31,7 +31,7 @@ class ViewPaymentDetails : AppCompatActivity() {
         btnUpdate.setOnClickListener{
             openUpdateDialog(
                 intent.getStringExtra("payId").toString(),
-                intent.getStringExtra("payCardNumber").toString()
+                intent.getStringExtra("cardNo").toString()
 
             )
         }
@@ -70,9 +70,9 @@ class ViewPaymentDetails : AppCompatActivity() {
 
     private fun setValuesToViews() {
 
-        tvCardNumber.text= intent.getStringExtra("etCardNumber")
-        tvCardHolderName.text= intent.getStringExtra("etCardHolderName")
-        tvMonthYear.text= intent.getStringExtra("etMonthYear")
+        tvCardNumber.text= intent.getStringExtra("cardNo")
+        tvCardHolderName.text= intent.getStringExtra("holderName")
+        tvMonthYear.text= intent.getStringExtra("expDate")
 
 
     }
@@ -93,9 +93,9 @@ class ViewPaymentDetails : AppCompatActivity() {
         val etMonthYear = mDialogView.findViewById<EditText>(R.id.expDate)
         val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
 
-        etCardNumber.setText(intent.getStringExtra("payCardNumber").toString())
-        etCardHolderName.setText(intent.getStringExtra("payCardHolderName").toString())
-        etMonthYear.setText(intent.getStringExtra("payMonthYear").toString())
+        etCardNumber.setText(intent.getStringExtra("cardNo").toString())
+        etCardHolderName.setText(intent.getStringExtra("holderName").toString())
+        etMonthYear.setText(intent.getStringExtra("expDate").toString())
 
 
         mDialog.setTitle("Updating $payCardNumber Record")
