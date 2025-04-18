@@ -18,4 +18,16 @@ plugins {
     id 'com.android.application' version '7.4.1' apply false
     id 'com.android.library' version '7.4.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.21' apply false
+
+    // ✅ Add the SonarQube plugin here
+    id "org.sonarqube" version "6.0.1.5171"
+}
+
+// ✅ Add this block to configure SonarQube
+sonar {
+    properties {
+        property "sonar.projectKey", "Sandani2000_Medicare"
+        property "sonar.organization", "sandani2000"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
